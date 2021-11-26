@@ -8,7 +8,7 @@
     </head>
     <body class="bg-green-300 h-full flex justify-center flex-col">
         <h1 class="text-green-500 text-5xl font-extrabold text-center">Political Party Classifier</h1>
-        <form action="http://localhost:5000/predict" method="post" class="flex flex-col justify-center items-center m-8">
+        <form action="https://salarc.pythonanywhere.com/predict" method="post" class="flex flex-col justify-center items-center m-8">
             <label for="text-input m-2">Tweet/Comment/Post</label>
             <input class="m-2" type="text" required id="text-input" name="text-input" autocorrect="off">
             <input class="m-2 py-1 px-2 text-xl rounded-lg bg-green-500 text-green-300 font-extrabold" type="submit" value="Submit">
