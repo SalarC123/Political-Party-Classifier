@@ -4,10 +4,14 @@
 
 from flask import Flask, render_template, request
 import pickle
+import os
 
 app = Flask(__name__)
 
-with open("pipe.pkl", "rb") as f:
+root = os.path.dirname(os.path.abspath(__file__))
+pickle_file = os.path.join(root, "pipe.pkl")
+
+with open(pickle_file, "rb") as f:
     pipe = pickle.load(f)
 
 @app.route("/")
